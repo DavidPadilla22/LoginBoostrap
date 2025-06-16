@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow-sm" style="max-width: 900px; width: 100%; padding: 2rem;">
+  <div class="container mt-5">
+    <h2 class="mb-4">Formulario de Registro</h2>
+    <form class="row g-3" method="post" action="#">
+      
+      <!-- Nombres y Apellidos -->
+      <div class="col-md-6">
+        <label class="form-label">Nombres</label>
+        <input type="text" name="nombre" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Apellidos</label>
+        <input type="text" name="apellido" class="form-control" required>
+      </div>
+
+      <!-- Fecha y Correo -->
+      <div class="col-md-6">
+        <label class="form-label">Fecha de nacimiento</label>
+        <input type="date" name="fecha" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Correo electrónico</label>
+        <input type="email" name="correo" class="form-control" required>
+      </div>
+
+      <!-- Teléfono y Nacionalidad -->
+      <div class="col-md-6">
+        <label class="form-label">Teléfono</label>
+        <input type="tel" name="telefono" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="nacionalidad" class="form-label">Nacionalidad:</label>
+        <select id="nacionalidad" name="nacionalidad" class="form-control" required>
+          <option value="" disabled selected>Seleccione un país</option>
+          <option value="AF">Afganistán</option>
+          <option value="AL">Albania</option>
+          <option value="DZ">Argelia</option>
+          <option value="AR">Argentina</option>
+          <option value="AU">Australia</option>
+          <option value="AT">Austria</option>
+          <option value="BE">Bélgica</option>
+          <option value="BO">Bolivia</option>
+          <option value="BR">Brasil</option>
+          <option value="CA">Canadá</option>
+          <option value="CL">Chile</option>
+          <option value="CN">China</option>
+          <option value="CO">Colombia</option>
+          <option value="CR">Costa Rica</option>
+          <option value="CU">Cuba</option>
+          <option value="CZ">República Checa</option>
+          <option value="DK">Dinamarca</option>
+          <option value="EC">Ecuador</option>
+          <option value="EG">Egipto</option>
+          <option value="SV">El Salvador</option>
+          <option value="EE">Estonia</option>
+          <option value="FI">Finlandia</option>
+          <option value="FR">Francia</option>
+          <option value="DE">Alemania</option>
+          <option value="GR">Grecia</option>
+          <option value="GT">Guatemala</option>
+          <option value="HN">Honduras</option>
+          <option value="HU">Hungría</option>
+          <option value="IS">Islandia</option>
+          <option value="IN">India</option>
+          <option value="ID">Indonesia</option>
+          <option value="IR">Irán</option>
+          <option value="IE">Irlanda</option>
+          <option value="IL">Israel</option>
+          <option value="IT">Italia</option>
+          <option value="JM">Jamaica</option>
+          <option value="JP">Japón</option>
+          <option value="JO">Jordania</option>
+          <option value="KZ">Kazajistán</option>
+          <option value="KE">Kenia</option>
+          <option value="KR">Corea del Sur</option>
+          <option value="KW">Kuwait</option>
+          <option value="LV">Letonia</option>
+          <option value="LB">Líbano</option>
+          <option value="LY">Libia</option>
+          <option value="LT">Lituania</option>
+          <option value="LU">Luxemburgo</option>
+          <option value="MG">Madagascar</option>
+          <option value="MY">Malasia</option>
+          <option value="MX">México</option>
+          <option value="MA">Marruecos</option>
+          <option value="NL">Países Bajos</option>
+          <option value="NZ">Nueva Zelanda</option>
+          <option value="NI">Nicaragua</option>
+          <option value="NG">Nigeria</option>
+          <option value="NO">Noruega</option>
+          <option value="PA">Panamá</option>
+          <option value="PY">Paraguay</option>
+          <option value="PE">Perú</option>
+          <option value="PH">Filipinas</option>
+          <option value="PL">Polonia</option>
+          <option value="PT">Portugal</option>
+          <option value="QA">Qatar</option>
+          <option value="RO">Rumania</option>
+          <option value="RU">Rusia</option>
+          <option value="SA">Arabia Saudita</option>
+          <option value="RS">Serbia</option>
+          <option value="SG">Singapur</option>
+          <option value="SK">Eslovaquia</option>
+          <option value="SI">Eslovenia</option>
+          <option value="ZA">Sudáfrica</option>
+          <option value="ES">España</option>
+          <option value="SE">Suecia</option>
+          <option value="CH">Suiza</option>
+          <option value="TH">Tailandia</option>
+          <option value="TN">Túnez</option>
+          <option value="TR">Turquía</option>
+          <option value="UA">Ucrania</option>
+          <option value="AE">Emiratos Árabes Unidos</option>
+          <option value="GB">Reino Unido</option>
+          <option value="US">Estados Unidos</option>
+          <option value="UY">Uruguay</option>
+          <option value="VE">Venezuela</option>
+          <option value="VN">Vietnam</option>
+          <option value="YE">Yemen</option>
+        </select>
+      </div>
+
+      <!-- Contraseñas -->
+      <div class="col-md-6">
+        <label class="form-label">Contraseña</label>
+        <input type="password" name="password" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Repetir contraseña</label>
+        <input type="password" name="confirmar_password" class="form-control" required>
+      </div>
+
+      <!-- Sexo -->
+      <div class="col-md-6">
+        <label class="form-label">Sexo</label>
+        <select name="sexo" class="form-select" required>
+          <option value="">Seleccione</option>
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <!-- Botón -->
+      <div class="col-12">
+        <button type="button" class="btn btn-primary w-100" onclick="window.location.href='/l'">
+          Enviar
+        </button>
+      </div>
+      
+</div>
+</div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
